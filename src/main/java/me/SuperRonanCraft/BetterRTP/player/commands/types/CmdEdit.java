@@ -1,6 +1,5 @@
 package me.SuperRonanCraft.BetterRTP.player.commands.types;
 
-import com.bekvon.bukkit.residence.containers.cmd;
 import me.SuperRonanCraft.BetterRTP.BetterRTP;
 import me.SuperRonanCraft.BetterRTP.player.commands.RTPCommandHelpable;
 import me.SuperRonanCraft.BetterRTP.player.rtp.RTP_SHAPE;

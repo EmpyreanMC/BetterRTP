@@ -1,10 +1,8 @@
 package me.SuperRonanCraft.BetterRTP.player.rtp;
 
 import br.net.fabiozumbi12.RedProtect.Bukkit.RedProtect;
-import com.bekvon.bukkit.residence.Residence;
 import com.griefdefender.api.GriefDefender;
 import com.griefdefender.api.claim.Claim;
-import com.hakan.claimsystem.api.ClaimAPI;
 import com.massivecraft.factions.Board;
 import com.massivecraft.factions.FLocation;
 import com.massivecraft.factions.Faction;
@@ -146,14 +144,7 @@ public class RTPPluginValidation { //Safe locations depending on enabled depende
     // Residence (v4.9.1.9)
     // https://www.spigotmc.org/resources/residence.11480/
     private boolean getResidence(Location loc) {
-        boolean result = true;
-        if (getDepends().isResidence())
-            try {
-                result = Residence.getInstance().getResidenceManager().getByLoc(loc) == null;
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-        return result;
+        return true;
     }
 
     // NOT TESTED (3.0.2)
@@ -175,14 +166,7 @@ public class RTPPluginValidation { //Safe locations depending on enabled depende
     // hClaims (v1.1.1)
     // https://www.spigotmc.org/resources/hclaims.90540/ (Local Repo)
     private boolean gethClaims(Location loc) {
-        boolean result = true;
-        if (getDepends().ishClaims())
-            try {
-                result = ClaimAPI.isClaimed(loc);
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-        return result;
+        return true;
     }
 
     // NOT TESTED (3.1.0)

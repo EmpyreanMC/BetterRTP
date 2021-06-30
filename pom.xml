@@ -42,44 +42,44 @@
         </resources>
         <finalName>${project.artifactId}-${project.version}</finalName>
         <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-install-plugin</artifactId>
-                <executions>
-                    <execution>
-                        <id>hack-binary</id>
-                        <phase>clean</phase>
-                        <configuration>
-                            <file>${basedir}/LocalJars/Residence4.9.1.9.jar</file>
-                            <repositoryLayout>default</repositoryLayout>
-                            <groupId>com.bekvon.bukkit</groupId>
-                            <artifactId>residence</artifactId>
-                            <version>4.9.1.9</version>
-                            <packaging>jar</packaging>
-                            <generatePom>true</generatePom>
-                        </configuration>
-                        <goals>
-                            <goal>install-file</goal>
-                        </goals>
-                    </execution>
-                    <execution>
-                        <id>hack-binary-2</id>
-                        <phase>clean</phase>
-                        <configuration>
-                            <file>${basedir}/LocalJars/hClaims.jar</file>
-                            <repositoryLayout>default</repositoryLayout>
-                            <groupId>com.hakan</groupId>
-                            <artifactId>claimsystem</artifactId>
-                            <version>2.1.8</version>
-                            <packaging>jar</packaging>
-                            <generatePom>true</generatePom>
-                        </configuration>
-                        <goals>
-                            <goal>install-file</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
+<!--            <plugin>-->
+<!--                <groupId>org.apache.maven.plugins</groupId>-->
+<!--                <artifactId>maven-install-plugin</artifactId>-->
+<!--                <executions>-->
+<!--                    <execution>-->
+<!--                        <id>hack-binary</id>-->
+<!--                        <phase>clean</phase>-->
+<!--                        <configuration>-->
+<!--                            <file>${basedir}/LocalJars/Residence4.9.1.9.jar</file>-->
+<!--                            <repositoryLayout>default</repositoryLayout>-->
+<!--                            <groupId>com.bekvon.bukkit</groupId>-->
+<!--                            <artifactId>residence</artifactId>-->
+<!--                            <version>4.9.1.9</version>-->
+<!--                            <packaging>jar</packaging>-->
+<!--                            <generatePom>true</generatePom>-->
+<!--                        </configuration>-->
+<!--                        <goals>-->
+<!--                            <goal>install-file</goal>-->
+<!--                        </goals>-->
+<!--                    </execution>-->
+<!--                    <execution>-->
+<!--                        <id>hack-binary-2</id>-->
+<!--                        <phase>clean</phase>-->
+<!--                        <configuration>-->
+<!--                            <file>${basedir}/LocalJars/hClaims.jar</file>-->
+<!--                            <repositoryLayout>default</repositoryLayout>-->
+<!--                            <groupId>com.hakan</groupId>-->
+<!--                            <artifactId>claimsystem</artifactId>-->
+<!--                            <version>2.1.8</version>-->
+<!--                            <packaging>jar</packaging>-->
+<!--                            <generatePom>true</generatePom>-->
+<!--                        </configuration>-->
+<!--                        <goals>-->
+<!--                            <goal>install-file</goal>-->
+<!--                        </goals>-->
+<!--                    </execution>-->
+<!--                </executions>-->
+<!--            </plugin>-->
             <plugin>
                 <!-- Shade PaperLib into project -->
                 <groupId>org.apache.maven.plugins</groupId>
@@ -217,12 +217,12 @@
             <scope>provided</scope>
         </dependency>
         <!-- Residence v4.9.1.9 (https://www.spigotmc.org/resources/residence.11480/) (LOCAL REPO) -->
-        <dependency>
-            <groupId>com.bekvon.bukkit</groupId>
-            <artifactId>Residence</artifactId>
-            <version>LATEST</version>
-            <scope>provided</scope>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>com.bekvon.bukkit</groupId>-->
+<!--            <artifactId>Residence</artifactId>-->
+<!--            <version>LATEST</version>-->
+<!--            <scope>provided</scope>-->
+<!--        </dependency>-->
         <!-- ProtocolLib -->
         <dependency>
             <groupId>com.comphenix.protocol</groupId>
@@ -258,12 +258,12 @@
             </exclusions>
         </dependency>
         <!-- ClaimAPI for Pandomim on Discord (https://www.spigotmc.org/resources/hclaims.90540/) -->
-        <dependency>
-            <groupId>com.hakan</groupId>
-            <artifactId>claimapi</artifactId>
-            <version>LATEST</version>
-            <scope>provided</scope>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>com.hakan</groupId>-->
+<!--            <artifactId>claimapi</artifactId>-->
+<!--            <version>LATEST</version>-->
+<!--            <scope>provided</scope>-->
+<!--        </dependency>-->
         <!-- GriefDefender (https://www.spigotmc.org/resources/griefdefender.68900/) -->
         <dependency>
             <groupId>com.github.bloodmc</groupId>
